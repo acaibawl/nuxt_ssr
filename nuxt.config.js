@@ -3,9 +3,11 @@ export default {
   mode: 'universal',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nuxt_first',
+    title: process.env.npm_package_name || '',
+    // titleタグを"{個別ページ名}| {サイト名}"の形式にする
+    titleTemplate: `%s | ${process.env.npm_package_name || ''}`,
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ja'
     },
     meta: [
       { charset: 'utf-8' },

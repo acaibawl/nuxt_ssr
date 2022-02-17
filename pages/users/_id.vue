@@ -4,6 +4,12 @@
 
 <script>
 export default {
+    head() {
+      return {
+        // computedやdataの要素を使って動的にタグをつけられる
+        title: this.user.name,
+      };
+    },
     data(){
         return {
             id: this.$route.params.id,
