@@ -1,9 +1,18 @@
 <template>
-  <Tutorial/>
+  <div>
+    <Tutorial/>
+    <div>count: {{ $store.state.count }}</div>
+    <button @click="addCount">Add</button>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  methods: {
+    addCount() {
+      this.$store.dispatch('count/increment');
+    },
+  },
 }
 </script>
