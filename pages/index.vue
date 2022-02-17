@@ -14,6 +14,9 @@ export default {
       this.$store.dispatch('count/increment');
     },
   },
+  mounted() {
+    this.$hello('mounted');
+  },
 }
 </script>
 
