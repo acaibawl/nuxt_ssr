@@ -1,4 +1,6 @@
 export default {
+  // デフォルトがuniversal
+  mode: 'universal',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt_first',
