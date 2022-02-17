@@ -3,6 +3,9 @@
 </template>
 
 <script>
+// チルダでプロジェクトルートを指定できる
+import users from '~/data/users.json';
+
 export default {
     head() {
       return {
@@ -13,17 +16,7 @@ export default {
     data(){
         return {
             id: this.$route.params.id,
-            users: [
-                { 
-                    id: 1, name: 'John Doe'
-                },
-                {
-                    id: 2, name: 'Kevin Smith',
-                },
-                {
-                    id: 3, name: 'Harry Bosch'
-                },
-            ],
+            users: users,
         }
     },
     computed:{
