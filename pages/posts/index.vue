@@ -17,7 +17,7 @@ export default {
     };
   },
   async mounted() {
-    const posts = await this.$axios.$get("https://jsonplaceholder.typicode.com/posts/");
+    const posts = await this.$axios.$get("/posts/");
     this.posts = posts;
   },
 }

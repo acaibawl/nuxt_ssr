@@ -27,7 +27,7 @@ export default {
   //   };
   // }, 同じ内容をnuxt組み込みの@nuxt/axiosで書き換えてみる。
   async asyncData({ $axios, params }) {
-    const post = await $axios.$get(`https://jsonplaceholder.typicode.com/posts/${params.id}`);
+    const post = await $axios.$get(`/posts/${params.id}`);
     return { post };
   },
   head() {
