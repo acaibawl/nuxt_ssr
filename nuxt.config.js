@@ -52,7 +52,12 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
+
+  // baseパスをカスタマイズできる
   router: {
     base: '/',
   },
+
+  // ローディング時のプログレスバーを設定できる
+  loading: { color: '#FF8733' },
 }
